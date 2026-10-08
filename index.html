@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.I.R.M.I.V. Esperanza - Generatore PTRP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>S.I.R.M.I.V. "Esperanza"</h1>
+            <p>Generatore Automatico Progetto Terapeutico Riabilitativo Personalizzato (PTRP) & Relazione</p>
+        </header>
+
+        <main>
+            <form id="ptrpForm">
+                <!-- Sezione 1: Anagrafica -->
+                <section class="card">
+                    <h2>1. Dati Anagrafici e Clinici</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nomeMinore">Cognome e Nome:</label>
+                            <input type="text" id="nomeMinore" required placeholder="Es. QUAGLIETTA MARTINA MARIA">
+                        </div>
+                        <div class="form-group">
+                            <label for="luogoDataNascita">Luogo e data di nascita:</label>
+                            <input type="text" id="luogoDataNascita" placeholder="Es. POTENZA 27/01/2011">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="residenza">Abitazione / Residenza:</label>
+                            <input type="text" id="residenza" placeholder="Es. VIA DELLE QUERCE, 6 - POTENZA">
+                        </div>
+                        <div class="form-group">
+                            <label for="cartellaClinica">Cartella clinica:</label>
+                            <input type="text" id="cartellaClinica" placeholder="N. cartella">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="asl">ASL Distretto Sanitario:</label>
+                            <input type="text" id="asl" placeholder="Es. ASL POTENZA">
+                        </div>
+                        <div class="form-group">
+                            <label for="equipe">Équipe Territoriale:</label>
+                            <input type="text" id="equipe" placeholder="Es. NEUROPSICHIATRIA INFANTILE">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="referenti">Referenti e Recapiti:</label>
+                            <input type="text" id="referenti" placeholder="DOTT.SSA IRENE LACAPRA - email/tel">
+                        </div>
+                        <div class="form-group">
+                            <label for="caseManager">Case Manager e Recapiti:</label>
+                            <input type="text" id="caseManager" placeholder="GIUSEPPE MARMO - email/tel">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="familiari">Familiari referenti e recapiti:</label>
+                        <input type="text" id="familiari" placeholder="FRANCESCA PEZZANO - 3470932984">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="diagPrincipale">Diagnosi Clinica Principale:</label>
+                            <input type="text" id="diagPrincipale" placeholder="Es. DEPRESSIONE IN PAZIENTE...">
+                        </div>
+                        <div class="form-group">
+                            <label for="codIcd10P">Cod. ICD10:</label>
+                            <input type="text" id="codIcd10P" placeholder="Codice">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="motivoInvio">Motivo dell'invio da parte dell'Équipe Territoriale:</label>
+                        <textarea id="motivoInvio" rows="3" placeholder="Inserisci il testo del motivo d'invio..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="anamnesi">Informazioni anamnestiche rilevanti:</label>
+                        <textarea id="anamnesi" rows="3" placeholder="Inserisci le informazioni anamnestiche..."></textarea>
+                    </div>
+                </section>
+
+                <!-- Sezione 2: Analisi della Situazione -->
+                <section class="card">
+                    <h2>2. Analisi della Situazione (Aree)</h2>
+                    
+                    <h3>Area Psicopatologica</h3>
+                    <div class="form-row">
+                        <div class="form-group"><label>Punti di forza:</label><textarea id="forzaPsico" rows="2"></textarea></div>
+                        <div class="form-group"><label>Criticità:</label><textarea id="criticaPsico" rows="2"></textarea></div>
+                    </div>
+
+                    <h3>Area della cura di sé / ambiente</h3>
+                    <div class="form-row">
+                        <div class="form-group"><label>Punti di forza:</label><textarea id="forzaCura" rows="2"></textarea></div>
+                        <div class="form-group"><label>Criticità:</label><textarea id="criticaCura" rows="2"></textarea></div>
+                    </div>
+
+                    <h3>Area della competenza relazionale</h3>
+                    <div class="form-row">
+                        <div class="form-group"><label>Punti di forza:</label><textarea id="forzaRela" rows="2"></textarea></div>
+                        <div class="form-group"><label>Criticità:</label><textarea id="criticaRela" rows="2"></textarea></div>
+                    </div>
+
+                    <h3>Area del funzionamento scolastico</h3>
+                    <div class="form-row">
+                        <div class="form-group"><label>Punti di forza:</label><textarea id="forzaScuola" rows="2"></textarea></div>
+                        <div class="form-group"><label>Criticità:</label><textarea id="criticaScuola" rows="2"></textarea></div>
+                    </div>
+
+                    <h3>Area delle autonomie e abilità sociali</h3>
+                    <div class="form-row">
+                        <div class="form-group"><label>Punti di forza:</label><textarea id="forzaAutonomie" rows="2"></textarea></div>
+                        <div class="form-group"><label>Criticità:</label><textarea id="criticaAutonomie" rows="2"></textarea></div>
+                    </div>
+
+                    <h3>Famiglia</h3>
+                    <div class="form-row">
+                        <div class="form-group"><label>Punti di forza:</label><textarea id="forzaFamiglia" rows="2"></textarea></div>
+                        <div class="form-group"><label>Criticità:</label><textarea id="criticaFamiglia" rows="2"></textarea></div>
+                    </div>
+
+                    <h3>Contesti di vita</h3>
+                    <div class="form-row">
+                        <div class="form-group"><label>Punti di forza:</label><textarea id="forzaContesti" rows="2"></textarea></div>
+                        <div class="form-group"><label>Criticità:</label><textarea id="criticaContesti" rows="2"></textarea></div>
+                    </div>
+                </section>
+
+                <!-- Sezione 3: Durata e Note Relazione -->
+                <section class="card">
+                    <h2>3. Pianificazione e Relazione d'Andamento</h2>
+                    <div class="form-group">
+                        <label for="osservazioniRecenti">Note sulle attività recenti e osservazioni (per generare la relazione):</label>
+                        <textarea id="osservazioniRecenti" rows="4" placeholder="Descrivi l'andamento recente, i laboratori svolti e l'evoluzione del ragazzo..."></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="durataMesi">Durata prevista (mesi):</label>
+                            <input type="text" id="durataMesi" value="6">
+                        </div>
+                        <div class="form-group">
+                            <label for="decorrenza">Decorrenza (es. 01/07/2026 al 31/12/2026):</label>
+                            <input type="text" id="decorrenza" placeholder="01/07/2026 al 31/12/2026">
+                        </div>
+                    </div>
+                </section>
+
+                <button type="button" id="generaBtn" class="btn-primary">Genera PTRP e Relazione</button>
+            </form>
+
+            <!-- Risultato / Anteprima -->
+            <section id="outputSection" class="card hidden">
+                <h2>Documenti Generati</h2>
+                
+                <div class="tab-buttons">
+                    <button type="button" class="tab-btn active" onclick="mostraTab('ptrpOutput')">Modello PTRP Ufficiale</button>
+                    <button type="button" class="tab-btn" onclick="mostraTab('relazioneOutput')">Relazione d'Andamento</button>
+                </div>
+
+                <div id="ptrpOutput" class="tab-content active">
+                    <div class="document-preview" id="previewPtrp"></div>
+                </div>
+
+                <div id="relazioneOutput" class="tab-content">
+                    <div class="document-preview" id="previewRelazione"></div>
+                </div>
+
+                <button type="button" id="stampaBtn" class="btn-secondary">Stampa / Salva in PDF</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
